@@ -1,0 +1,17 @@
+# Requirements for rag_app.py (LangChain + FAISS + OpenAI)
+# Install with:  python -m pip install -r requirements.txt
+
+# --- LangChain ---
+langchain-core>=0.3
+langchain-community>=0.3
+langchain-openai>=0.2
+langchain-text-splitters>=0.3
+
+# --- Vector database (local, persistent) ---
+faiss-cpu>=1.8
+
+# --- PDF reading (needed by PyPDFLoader) ---
+pypdf>=4.0
+
+# --- Loads OPENAI_API_KEY from the .env file ---
+python-dotenv>=1.0
